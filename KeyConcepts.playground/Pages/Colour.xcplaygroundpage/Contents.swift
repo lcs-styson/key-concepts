@@ -31,7 +31,9 @@ canvas.defaultLineWidth = 5
 for i in stride(from: 180, through: 240, by: 10) {
     
     // Set line colour
-    canvas.lineColor = Color(hue: Float(i), saturation: 80, brightness: 90, alpha: 100)
+    //canvas.lineColor = Color(hue: Float(i), saturation: 80, brightness: 90, alpha: 100)
+    
+    canvas.lineColor = Color(hue: i , saturation: 80, brightness: 90, alpha: 100)
     
     // Draw the line
     canvas.drawLine(from: Point(x: i, y: 0), to: Point(x: i, y: canvas.height))

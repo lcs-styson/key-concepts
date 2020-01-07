@@ -38,12 +38,17 @@ let lightRed = Color(hue: 4, saturation: 78, brightness: 92, alpha: 100)
 // No border, has a fill
 canvas.drawShapesWithBorders = false
 canvas.drawShapesWithFill = true
-canvas.drawEllipse(at: Point(x: 100, y: 100), width: 50, height: 75)
+
+// Draw circles
+canvas.fillColor = lightRed
+canvas.drawEllipse(at: Point(x: 100, y: 100), width: 100, height: 100)
+canvas.fillColor = lightBlue
+canvas.drawEllipse(at: Point(x: 150, y: 100), width: 50, height: 75)
 
 // Has a border, no fill
-canvas.drawShapesWithBorders = true
-canvas.drawShapesWithFill = false
-canvas.drawEllipse(at: Point(x: 200, y: 100), width: 50, height: 75)
+//canvas.drawShapesWithBorders = true
+//canvas.drawShapesWithFill = false
+//canvas.drawEllipse(at: Point(x: 200, y: 100), width: 50, height: 75)
 
 
 /*:
