@@ -34,26 +34,31 @@ let lightRed = Color(hue: 4, saturation: 78, brightness: 92, alpha: 100)
 
 // HINT: Remember that all shapes have a fill and a border.
 //       You can turn off the fill or border if desired.
-
 // No border, has a fill
 canvas.drawShapesWithBorders = false
 canvas.drawShapesWithFill = true
 
 // Draw circles
+canvas.fillColor = grey
+canvas.drawEllipse(at: Point(x: 200, y: 200), width: 30000, height: 3000)
 canvas.fillColor = lightRed
-canvas.drawEllipse(at: Point(x: 200, y: 200), width: 100, height: 100)
+canvas.drawEllipse(at: Point(x: 200, y: 200), width: 340, height: 340)
+canvas.fillColor = grey
+canvas.drawEllipse(at: Point(x: 200, y: 200), width: 160, height: 160)
 canvas.fillColor = lightBlue
-canvas.drawEllipse(at: Point(x: 350, y: 200), width: 100, height: 100)
+canvas.drawEllipse(at: Point(x: 350, y: 200), width: 340, height: 340)
+
 
 // Has a border, no fill
-//canvas.drawShapesWithBorders = true
-//canvas.drawShapesWithFill = false
-//canvas.drawEllipse(at: Point(x: 200, y: 100), width: 50, height: 75)
+canvas.drawShapesWithBorders = true
+canvas.drawShapesWithFill = false
 
+canvas.defaultBorderWidth = 160
+canvas.borderColor = grey
 
+canvas.drawEllipse(at: Point(x: 350, y: 200), width: 160, height: 160)
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
  */
 PlaygroundPage.current.liveView = canvas
-
