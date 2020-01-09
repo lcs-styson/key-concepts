@@ -41,9 +41,9 @@ canvas.drawShapesWithFill = true
 
 // Draw circles
 canvas.fillColor = lightRed
-canvas.drawEllipse(at: Point(x: 100, y: 100), width: 100, height: 100)
+canvas.drawEllipse(at: Point(x: 200, y: 200), width: 100, height: 100)
 canvas.fillColor = lightBlue
-canvas.drawEllipse(at: Point(x: 150, y: 100), width: 50, height: 75)
+canvas.drawEllipse(at: Point(x: 350, y: 200), width: 100, height: 100)
 
 // Has a border, no fill
 //canvas.drawShapesWithBorders = true
