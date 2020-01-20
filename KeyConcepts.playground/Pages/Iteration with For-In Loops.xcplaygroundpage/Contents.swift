@@ -31,10 +31,10 @@ let canvas = Canvas(width: 300, height: 400)
 canvas.defaultLineWidth = 5
 
 // Draw the "rungs" of a ladder
-for y in stride(from: 0, through: 400, by: 50) {
+for y in stride(from: 5, through: 400, by: 50) {
 
     // Draw each rung
-    canvas.drawLine(from: Point(x: 100, y: y), to: Point(x: 200, y: y))
+    canvas.drawRectangle(at: <#T##Point#>, width: <#T##Int#>, height: <#T##Int#>)
 }
 /*:
  ### Counting backwards

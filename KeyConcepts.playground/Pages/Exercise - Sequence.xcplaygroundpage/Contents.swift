@@ -40,23 +40,36 @@ canvas.drawShapesWithFill = true
 
 // Draw circles
 canvas.fillColor = grey
+
+
 canvas.drawEllipse(at: Point(x: 200, y: 200), width: 30000, height: 3000)
-canvas.fillColor = lightRed
-canvas.drawEllipse(at: Point(x: 200, y: 200), width: 340, height: 340)
-canvas.fillColor = grey
-canvas.drawEllipse(at: Point(x: 200, y: 200), width: 160, height: 160)
-canvas.fillColor = lightBlue
-canvas.drawEllipse(at: Point(x: 350, y: 200), width: 340, height: 340)
+//canvas.fillColor = lightRed
+//canvas.drawEllipse(at: Point(x: 200, y: 200), width: 340, height: 340)
+//canvas.fillColor = grey
+//canvas.drawEllipse(at: Point(x: 200, y: 200), width: 160, height: 160)
+//canvas.fillColor = lightBlue
+//canvas.drawEllipse(at: Point(x: 350, y: 200), width: 340, height: 340)
+//
+//
+//// Has a border, no fill
 
-
-// Has a border, no fill
+// Characteristics for circles
 canvas.drawShapesWithBorders = true
 canvas.drawShapesWithFill = false
+canvas.defaultBorderWidth = 100
 
-canvas.defaultBorderWidth = 160
-canvas.borderColor = grey
+// Left circle
+canvas.borderColor = lightRed
+canvas.drawEllipse(at: Point(x: 200, y: 200), width: 200, height: 200)
 
-canvas.drawEllipse(at: Point(x: 350, y: 200), width: 160, height: 160)
+// Right circle
+
+
+//
+//canvas.defaultBorderWidth = 160
+//canvas.borderColor = grey
+//
+//canvas.drawEllipse(at: Point(x: 350, y: 200), width: 160, height: 160)
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
