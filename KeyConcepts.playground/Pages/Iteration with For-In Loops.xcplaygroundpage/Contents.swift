@@ -34,8 +34,7 @@ canvas.defaultLineWidth = 5
 for y in stride(from: 5, through: 400, by: 50) {
 
     // Draw each rung
-    canvas.drawRectangle(at: <#T##Point#>, width: <#T##Int#>, height: <#T##Int#>)
-}
+    canvas.drawLine(from: Point(x: 50, y: y), to: Point(x: 200, y: y))
 /*:
  ### Counting backwards
  You can use a *for-in* loop with the *stride* function to count backwards as well.
@@ -53,3 +52,4 @@ print("Blast off!")
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
  */
 PlaygroundPage.current.liveView = canvas
+}
